@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Seong A. Kim — Research Map</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;700&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
     background: #f5f0e8;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Inter', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@
   }
 
   .title {
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 4px;
     text-transform: uppercase;
     color: #999;
@@ -34,15 +34,15 @@
   .center {
     background: #2c2416;
     color: #f5ead8;
-    padding: 22px 36px;
+    padding: 26px 42px;
     border-radius: 4px;
     text-align: center;
     margin-bottom: 16px;
     box-shadow: 4px 6px 20px rgba(0,0,0,0.2);
   }
 
-  .center h1 { font-size: 22px; font-weight: 600; letter-spacing: 1px; line-height: 1.3; }
-  .center .sub { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #c4a97d; margin-top: 6px; font-weight: 300; }
+  .center h1 { font-size: 26px; font-weight: 600; letter-spacing: 0.5px; line-height: 1.3; }
+  .center .sub { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #c4a97d; margin-top: 6px; font-weight: 300; }
 
   .connector-row {
     display: flex; align-items: center; justify-content: center;
@@ -51,8 +51,8 @@
 
   .connector-tag {
     background: #2c2416; color: #c4a97d;
-    padding: 6px 14px; border-radius: 20px;
-    font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+    padding: 7px 16px; border-radius: 20px;
+    font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
   }
 
   .connector-dot { width: 4px; height: 4px; background: #bbb; border-radius: 50%; }
@@ -66,7 +66,7 @@
     max-width: 960px; width: 100%;
   }
 
-  .legend-item { display: flex; align-items: center; gap: 7px; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #555; }
+  .legend-item { display: flex; align-items: center; gap: 7px; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: #555; }
   .legend-dot { width: 13px; height: 13px; border-radius: 2px; flex-shrink: 0; }
 
   /* GRID */
@@ -82,8 +82,8 @@
   .branch { display: flex; flex-direction: column; gap: 9px; }
 
   .branch-label {
-    font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-    color: #444; padding: 7px 10px; border-left: 3px solid;
+    font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+    color: #444; padding: 8px 10px; border-left: 3px solid;
     margin-bottom: 4px; font-weight: 700;
   }
 
@@ -93,7 +93,7 @@
 
   /* SECTION DIVIDER */
   .sub-divider {
-    font-size: 9px; letter-spacing: 2.5px; text-transform: uppercase;
+    font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
     color: #c2410c; padding: 7px 8px;
     background: rgba(0,0,0,0.04);
     border-radius: 2px;
@@ -102,7 +102,7 @@
 
   /* POSTITS */
   .postit {
-    padding: 11px 13px; border-radius: 2px; line-height: 1.45;
+    padding: 13px 15px; border-radius: 2px; line-height: 1.5;
     box-shadow: 2px 3px 8px rgba(0,0,0,0.11), 0 0 0 1px rgba(0,0,0,0.04);
     transition: transform 0.2s ease, box-shadow 0.2s ease; cursor: default;
     width: 100%; box-sizing: border-box;
@@ -110,9 +110,9 @@
 
   .postit:hover { transform: translateY(-3px); box-shadow: 4px 8px 18px rgba(0,0,0,0.17); z-index: 5; position: relative; }
 
-  .postit .label { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.55; margin-bottom: 3px; display: block; }
-  .postit .text  { font-weight: 600; font-size: 13.5px; display: block; line-height: 1.3; }
-  .postit .detail { font-size: 11px; font-style: italic; margin-top: 4px; opacity: 0.72; display: block; }
+  .postit .label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.55; margin-bottom: 4px; display: block; }
+  .postit .text  { font-weight: 600; font-size: 15px; display: block; line-height: 1.3; }
+  .postit .detail { font-size: 12px; font-style: normal; margin-top: 5px; opacity: 0.72; display: block; }
 
   /* COLORS */
   .yellow      { background: #fef9c3; color: #3a2e00; }  /* bright yellow — Japan */
